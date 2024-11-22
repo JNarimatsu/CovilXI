@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covil XI</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu__hamburguer container__imagem"></span>
+
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Cooperação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Estratégia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">RPG</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Festa</a>
+                </li>
+            </ul>
+            <img src="./img/dragao.png" alt="Logo da Alurabooks" class="container__imagem-dragao">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Covil</b>XI</h1>
+        </div>    
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+            <li class="opcoes__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Cooperação</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Estratégia</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">RPG</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Festa</a>
+            </li>
+        
+        </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+            
+        </ul>   
+        <div class="container">
+        <a href="#">
+            <img src="./img/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente">
+        </a>
+        <a href="#" class="container__link">
+            <img src="./img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+            <p class="container__texto">Minha sacola</p>
+        </a>
+        <a href="#" class="container__link">
+            <img src="./img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+            <p class="container__texto">Usuário</p>
+        </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Tá entediado?</h2>
+        <p class="banner__texto">Encontre em nossa estante o jogo perfeito pra você!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo jogo?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+<div class="carrossel__container">
+<div class="swiper">
+    <!-- Additional required wrapper -->
+     <!-- If we need pagination -->
+     <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./img/Capa jogos/7-wonders-architects.png" alt="Arquitetos"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/7-wonders.png" alt="7 wonders"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/Catan.png" alt="Catan"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/citadels.png" alt="Citadels"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/ticket.png" alt="Ticket"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/Wingspan.png" alt="Wingspan"></div>
+    </div>
+   
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+  <div class="card">
+    <!--Primeira linha-->
+    <div class="card__descricao">
+        <!--Primeira coluna-->
+        <div class="descricao">
+            <h3 class="descricao__titulo"> Talvez você também se interesse... </h3>
+            <h2 class="descricao__titulo-livro">pelos classicos</h2>
+            <p class="descricao__texto">Os melhores empreiteiros da Europa e das Arábias querem provar sua competência.
+             Granada, 1278. No sopé da Sierra Nevada, tem início um dos projetos mais empolgantes e interessantes da Espanha medieval: a construção da Alhambra.</p>
+        </div>
+        <!--Segunda coluna-->
+        <img src="img/Capa jogos/Alhambra.png" alt="Alhambra" class="card__jogo-destaque">
+    </div>
+    <!--Segunda Linha-->
+    <div class="card__botoes">
+        <!--Primeira coluna-->
+        <ul class="botoes">
+            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+
+        </ul>
+        <!--segunda coluna-->
+        <a href="#" class="botoes__ancora">Saiba mais</a>
+    </div>
+</div>
+</div>
+    </section>
+<!--Inicio da atividade -->
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+<div class="carrossel__container">
+<div class="swiper">
+    <!-- Additional required wrapper -->
+     <!-- If we need pagination -->
+     <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./img/Capa jogos/7-wonders-architects.png" alt="Arquitetos"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/7-wonders.png" alt="7 wonders"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/Catan.png" alt="Catan"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/citadels.png" alt="Citadels"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/ticket.png" alt="Ticket"></div>
+      <div class="swiper-slide"><img src="./img/Capa jogos/Wingspan.png" alt="Wingspan"></div>
+    </div>
+   
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+  <div class="card">
+    <!--Primeira linha-->
+    <div class="card__descricao">
+        <!--Primeira coluna-->
+        <div class="descricao">
+            <img src="/img/Estrelinhas.svg" class="descricao__estrelas">
+            <h3 class="descricao__titulo"> Jogo do mês</h3>
+            <h2 class="descricao__titulo-livro">Wingspan</h2>
+            <p class="descricao__texto">Wingspan é um jogo de tabuleiro com a mecânica de engine building (construção de motores de produção), de peso médio.
+            Vocês são entusiastas de pássaros - pesquisadores, observadores de pássaros, ornitólogos e colecionadores - que procuram descobrir e atrair as melhores aves para o seu aviário. Cada ave estende uma cadeia de combinações poderosas em um dos seus habitats (ações).</p>
+        </div>
+        <!--Segunda coluna-->
+        <img src="img/Capa jogos/Wingspan.png"  class="card__jogo-destaque">
+    </div>
+    <!--Segunda Linha-->
+    <div class="card__botoes">
+        <!--Primeira coluna-->
+        <ul class="botoes">
+            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+
+        </ul>
+        <!--segunda coluna-->
+        <a href="#" class="botoes__ancora">Saiba mais</a>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    <section class="topicos">
+       <h2 class="topicos__titulo">JOGOS VISITADOS RECENTEMENTE</h2> 
+       <UL class="topicos__listas">
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Galapagos</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Stonemaier Games</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">BURÓ</a>            
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Mandala Jogos</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Devir</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Grow</a>
+        </li>
+      
+       </UL>
+    </section>
+    <section class="contato">
+        <div class="contato__descricao">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Cadastre-se e receba novidades sobre jogos e muito mais!</p>
+    </div>
+        <input type="email" placeholder="Cadastre seu email" class="contato__email">
+    </section>
+    <hr/>
+    <footer class="rodape">
+        
+        
+        <img src="./img/dragao.png" alt="Logo da Alurabooks" class="container__imagem-dragao">
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Contatos</li>
+            <li class="lista-rodape__item">
+                <img src="./img/Email.png" alt="email" class="lista-rodape__imagem">
+                <a href="#" class="lista-rodape__link">E-mail</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/telefone.png" alt="telefone" class="lista-rodape__imagem">
+                <a href="#" class="lista-rodape__link">Telefone</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/Whats.png" alt="Whats" class="lista-rodape__imagem">
+                <a href="#" class="lista-rodape__link">Whatsapp</a>
+            </li>
+        </ul>
+       
+    </footer>
+
+    <!--Fim da atividade -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination:{
+                el: '.swiper-pagination',
+                type:'bullets',
+            },
+          });
+    </script>
+</body>
+</html>
